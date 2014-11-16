@@ -1,0 +1,37 @@
+\documentclass[11pt]{report}
+
+\begin{document}
+\title{My Tutorial}
+\author{Mohona Datta}
+\maketitle
+\tableofcontents
+\chapter{Introduction}
+My first LaTeX document!
+This is a line in text mode. 
+All commands start with a backslash.
+documentclass is the preamble, this the the body. 
+Start of by declaring "title{•}" and "author{•}". Then "maketitle" (blackslash removed) It will display on a separate page in all instances apart from the article class. 
+It is a good idea to compile as you go along.
+A blank line of code will generate a new line (hard return), or two backslashes (soft return).\\
+Now onto math mode, which needs to be embedded with a dollar sign:
+Suppose we are given a rectangle with side lengths $(x+1)$ and $(x+3)$. Then the equation $A=x^2+4x+3$ represents the area of the rectangle. This is in-line math mode.\\
+Display math mode is done by using double dollar signs.
+$$A=x^2+4x+3$$
+This will be on it's own line, and centre it.
+\chapter{Common Maths Notation}
+Superscript: 
+$$2x^3$$ Using the exponent sign as per usual. Only the single character after the caret will show- $$2x^34$$ unless we wrap the entire indices with curly brackets: $$2x^{34}$$
+$$2x^{3x^{4+5}}$$
+\\Subscript:
+Much the same as superscript, with underscore instead of a caret.
+$$2x_3$$
+$$2x_{34}$$
+$$2x_{3x_{4+5}}$$
+\\Greek Letters: Simply backslash and write the letter in maths mode
+$$\pi$$
+$$\alpha$$
+$$A=\pi r^2$$
+\\Trig Functions: slash tan/sin/cos
+$$y=\sin(x)$$
+$$y=\cos(x)$$
+\end{document}
